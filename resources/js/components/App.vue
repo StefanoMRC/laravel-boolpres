@@ -4,7 +4,8 @@
            <Header/>
              
              <main>
-                <Post/>
+                <router-view></router-view>
+                <!-- <Home/> -->
              </main>
         </div>
         
@@ -13,12 +14,14 @@
 
 <script>
 import Header from "./Header.vue";
-import Post from "./Post.vue";
+import Contact from "./Pages/Contact.vue";
+import Home from "./Pages/Home.vue";
     export default{
         name:'App',
         components:{
             Header,
-            Post
+            Home,
+            Contact
         }
     }
 </script>

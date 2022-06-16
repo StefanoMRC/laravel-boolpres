@@ -15,7 +15,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts=Post::with('tags','category')->get();
+        $posts=Post::with('tags','category')->paginate(5);
         return response()->json(compact('posts'));
     }
 
@@ -48,7 +48,8 @@ class PostController extends Controller
      */
     public function show($id)
     {
-        //
+        $post=Post::with('tags','category')->find($id);
+        return response()->json($post);
     }
 
     /**

@@ -37,8 +37,8 @@
             getPost() {
                 axios.get('http://127.0.0.1:8000/api/posts')
                     .then((res) => {
-                        console.log(res.data.posts);
-                        this.posts = res.data.posts;
+                        console.log(res.data.posts.data);
+                        this.posts = res.data.posts.data;
                     })
             }
         },
