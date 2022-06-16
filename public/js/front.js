@@ -2622,17 +2622,12 @@ var render = function () {
             _c("ul", { staticClass: "navbar-nav" }, [
               _c(
                 "li",
-                { staticClass: "nav-item active" },
+                { staticClass: "nav-item " },
                 [
                   _c(
                     "router-link",
                     { staticClass: "nav-link", attrs: { to: "/" } },
-                    [
-                      _vm._v("Home "),
-                      _c("span", { staticClass: "sr-only" }, [
-                        _vm._v("(current)"),
-                      ]),
-                    ]
+                    [_vm._v("Home ")]
                   ),
                 ],
                 1
@@ -18569,6 +18564,7 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODU
 
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   mode: 'history',
+  linkActiveClass: 'active',
   routes: [{
     path: '/',
     component: _components_Pages_Home_vue__WEBPACK_IMPORTED_MODULE_3__["default"]

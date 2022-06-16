@@ -18185,6 +18185,7 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODU
 
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   mode: 'history',
+  linkActiveClass: 'active',
   routes: [{
     path: '/',
     component: _components_Pages_Home_vue__WEBPACK_IMPORTED_MODULE_3__["default"]

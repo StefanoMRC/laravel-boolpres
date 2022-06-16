@@ -7,6 +7,7 @@ import Home from "./components/Pages/Home.vue";
 
 const router=new VueRouter({
     mode:'history',
+    linkActiveClass:'active',
     routes:[
         {path:'/', component:Home},
         {path:'/contact', component:Contact},
