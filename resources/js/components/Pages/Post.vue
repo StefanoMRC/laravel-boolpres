@@ -54,17 +54,14 @@
                             current_page,
                             last_page
                         } = res.data.posts;
-                        console.log(data);
-                        console.log(current_page);
-                        console.log(last_page);
+                        // console.log(data);
+                        // console.log(current_page);
+                        // console.log(last_page);
                         this.posts = data;
                         this.pagination = {
                             lastPage: last_page,
                             currentPage: current_page
                         }
-                    }).then(() => {
-                        console.log('terminato il caricamento dei posts')
-                        this.isLoading = false;
                     })
             }
         },
