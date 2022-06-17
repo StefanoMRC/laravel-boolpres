@@ -12,7 +12,7 @@ const router=new VueRouter({
     routes:[
         {path:'/', component:Home},
         {path:'/contact', component:Contact},
-        {path:'/posts/:slug', component: PostDetail, name: 'post-detail'},
+        {path:'/:slug', component: PostDetail, name: 'post-detail'},
         {path:'*', component:Home}
     ]
 });

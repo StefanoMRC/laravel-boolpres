@@ -18590,7 +18590,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
     path: '/contact',
     component: _components_Pages_Contact_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
   }, {
-    path: '/posts/:slug',
+    path: '/:slug',
     component: _components_Pages_PostDetail_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
     name: 'post-detail'
   }, {

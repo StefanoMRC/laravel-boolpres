@@ -23,5 +23,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 //     return response()->json(compact(''));
 // });
 
-Route::get('/posts', 'Api\PostController@index');
-Route::get('/posts/{slug}', 'PostController@show');
+Route::namespace('Api')->group( function(){
+    Route::get('/posts', 'PostController@index');
+    Route::get('/posts/{slug}', 'PostController@show');
+});
